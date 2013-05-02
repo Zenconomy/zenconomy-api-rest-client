@@ -39,11 +39,11 @@ $params = array(
 	'row' => array(
 		array(
 			'account' => '1910', // Int: Account number
-			'amount' => '-20000' // Int: Amount in 1/00ths of currency. Positive = Debit, Negative = Credit
+			'amount' => '-20000' // Int: Amount in 1/100ths of currency. Positive = Debit, Negative = Credit
 		),
 		array(
 			'account' => '1930', // Int: Account number
-			'amount' => '20000' // Int: Amount in 1/00ths of currency. Positive = Debit, Negative = Credit
+			'amount' => '20000' // Int: Amount in 1/100ths of currency. Positive = Debit, Negative = Credit
 		)
 	)
 );
