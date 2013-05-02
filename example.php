@@ -2,8 +2,8 @@
 
 require_once 'ZenconomyRestClient/ZenconomyRestClient.php';
 
-$myKey = '1234';
-$mySecret = '1234';
+$myKey = '1234'; // API public key - submitted with API request
+$mySecret = '1234'; // Api private key - used to hash data
 
 
 
@@ -30,13 +30,36 @@ print_r($response);
 
 
 
+# Create a record
 
-# Fetch all events for organization
+$params = array(
+	'period_id' => 1, // ID number of accounting period
+	'transaction_date' => '2013-01-01',
+	'text' => 'A test record',
+	'row' => array(
+		array(
+			'account' => '1910', // Int: Account number
+			'amount' => '-20000' // Int: Amount in 1/00ths of currency. Positive = Debit, Negative = Credit
+		),
+		array(
+			'account' => '1930', // Int: Account number
+			'amount' => '20000' // Int: Amount in 1/00ths of currency. Positive = Debit, Negative = Credit
+		)
+	)
+);
+
+$response = $restClient->post( '/record/create', $params );
+
+print_r($response);
+
+
+
+# Fetch all invoices for organization
 
 $params = array(
 	'organization_id' => 1,
 );
 
-$response = $restClient->post( '/event/list', $params );
+$response = $restClient->post( '/invoice/list', $params );
 
 print_r($response);
