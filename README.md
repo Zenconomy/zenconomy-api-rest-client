@@ -53,15 +53,15 @@ The API responds with a JSON object in the following format
 		}
 	],
 
-		// data can be an array or object depending on what type of data is being returned
-		data: {
-			example_id: 1,
-			name: “Example”
-		}
+	// data can be an array or object depending on what type of data is being returned
+	data: {
+		example_id: 1,
+		name: “Example”
 	}
+}
 ```
 
 
-###Example code
+###Code examples
 
 A PHP example is included. This example is based on Pest REST Client for PHP - http://github.com/educoder/pest
