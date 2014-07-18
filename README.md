@@ -30,8 +30,8 @@ $signature = hash_hmac( 'sha256', $key . $timestamp, $secret );
 ```
 
 ```javascript
-// Node.js
-var signature = crypto.createHmac('sha256', secret).update(key + timestamp).digest(‘hex’);
+// Node.js (using crypto)
+var signature = crypto.createHmac('sha256', secret).update(key + timestamp).digest('hex');
 ```
 
 ###Response
