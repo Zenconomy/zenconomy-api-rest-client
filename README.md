@@ -46,17 +46,17 @@ The API responds with a JSON object in the following format
 	// array of messages - these are only for information and do not contain data
 	msg: [
 		{
-			// type, “notification”, “warning” or “error”
-			type: “notification”,
+			// type, "notification", "warning" or "error"
+			type: "notification",
 			 // the message in cleartext
-			content: “The invoice was created”
+			content: "The invoice was created"
 		}
 	],
 
 	// data can be an array or object depending on what type of data is being returned
 	data: {
 		example_id: 1,
-		name: “Example”
+		name: "Example"
 	}
 }
 ```
