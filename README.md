@@ -61,7 +61,17 @@ The API responds with a JSON object in the following format
 }
 ```
 
+###Example: Node.js
 
-###Code examples
+Example requires restler and crypto. To run the tests, make sure you have Node.js and Node Package Manager (npm) installed, then from the example directory run:
 
-A PHP example is included. This example is based on Pest REST Client for PHP - http://github.com/educoder/pest
+```
+npm install
+node app.js
+```
+
+###Example: PHP
+
+This example requires PHP5.
+
+Based on Pest REST Client for PHP - http://github.com/educoder/pest
